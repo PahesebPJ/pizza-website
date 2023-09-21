@@ -1,0 +1,60 @@
+.header-container {
+    width: 100vw;
+    height: 10vh;
+    background: #393233;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza_logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.navigation-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 130px;
+    height: 100%;
+}
+
+.navigation-menu-container > ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  a:hover::after {
+    width: 100%;
+  }
